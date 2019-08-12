@@ -1,17 +1,24 @@
 {
-  "name": "bootstrap-solarized-theme",
+  "name": "bootstrap4-solarized-theme",
   "description": "Bootstrap theme using the Solarized color palette",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "author": {
-    "name": "Thijs Kok",
-    "email": "mail@thijskok.nl",
-    "url": "https://github.com/thijskok"
+    "name": "Shigeru Hagiwara",
+    "email": "hgwrsgr@gmail.com",
+    "url": "https://github.com/hgwr/"
   },
+  "contributors": [
+    {
+      "name": "Thijs Kok",
+      "email": "mail@thijskok.nl",
+      "url": "https://github.com/thijskok"
+    }
+  ],
   "dependencies": {
-    "bootstrap-sass": "3.*"
+    "bootstrap-scss": "4.3.1"
   },
   "devDependencies": {
-    "bootstrap-sass": "3.*",
+    "bootstrap-sass": "4.3.1",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
@@ -24,7 +31,7 @@
   "engines": {
     "node": "*"
   },
-  "homepage": "https://github.com/thijskok/bootstrap-solarized-theme",
+  "homepage": "https://github.com/hgwr/bootstrap4-solarized-theme",
   "keywords": [
     "bootstrap",
     "theme",
@@ -32,5 +39,5 @@
   ],
   "license": "MIT",
   "main": "./dist/css/solarized-dark-theme.min.css",
-  "repository": "thijskok/bootstrap-solarized-theme"
+  "repository": "hgwr/bootstrap4-solarized-theme"
 }

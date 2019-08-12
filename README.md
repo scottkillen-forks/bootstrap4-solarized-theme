@@ -1,41 +1,45 @@
-# Bootstrap Solarized theme
+# Bootstrap4 Solarized theme
 
-[![Build Status](https://travis-ci.org/thijskok/bootstrap-solarized-theme.svg?branch=master)](https://travis-ci.org/thijskok/bootstrap-solarized-theme)
-[![npm version](https://badge.fury.io/js/bootstrap-solarized-theme.svg)](https://badge.fury.io/js/bootstrap-solarized-theme)
+forked from thijskok/bootstrap-solarized-theme
 
-Bootstrap Solarized is a Bootstrap 3 compatible theme that uses Ethan Schoonover's awesome [Solarized color palette](http://ethanschoonover.com/solarized). It comes in two varieties, a light and a dark theme.
+[![Build Status](https://travis-ci.org/hgwr/bootstrap4-solarized-theme.svg?branch=master)](https://travis-ci.org/hgwr/bootstrap4-solarized-theme)
+[![npm version](https://badge.fury.io/js/bootstrap4-solarized-theme.svg)](https://badge.fury.io/js/bootstrap4-solarized-theme)
 
-![preview_light](https://raw.githubusercontent.com/thijskok/bootstrap-solarized-theme/master/preview-light.png)
-![preview_dark](https://raw.githubusercontent.com/thijskok/bootstrap-solarized-theme/master/preview-dark.png)
+Bootstrap Solarized is a Bootstrap 4 compatible theme that uses Ethan Schoonover's awesome [Solarized color palette](http://ethanschoonover.com/solarized). It comes in two varieties, a light and a dark theme.
+
+![preview_light](https://raw.githubusercontent.com/hgwr/bootstrap4-solarized-theme/master/preview-light.png)
+![preview_dark](https://raw.githubusercontent.com/hgwr/bootstrap4-solarized-theme/master/preview-dark.png)
 
 ## How to use
+
 Using this theme on your existing Bootstrap application is easy:
 
 1. Install this theme using either NPM or Bower:
 
-	For	NPM, use:
-	```sh
-	npm install bootstrap-solarized-theme
-	```
+For NPM, use:
 
-	For Bower, use:
-	```sh
-	bower install bootstrap-solarized-theme
-	```
+```sh
+npm install bootstrap4-solarized-theme
+```
 
-2. Add the necessary links to your `<head>` element for the stylesheet:
+For Bower, use:
 
-	```html
-	  <!-- Bootstrap -->
-	  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+```sh
+bower install bootstrap4-solarized-theme
+```
 
-	  <!-- Bootstrap Solarized dark theme -->
-	  <link rel="stylesheet" type="text/css" href="dist/css/solarized-dark-theme.min.css">
-	```
+1. Add the necessary links to your `<head>` element for the stylesheet:
 
-	*Note*: depending on your installation and deployment methods, the CSS files might reside in another directory. Change `dist/css/` into the path where the CSS files got installed or copied to. For example, NPM installs the theme into `node_modules/bootstrap-solarized-theme/dist` as a default.
+```html
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Bootstrap Solarized dark theme -->
+<link rel="stylesheet" type="text/css" href="dist/css/solarized-dark-theme.min.css">
+```
 
-3. Refresh that page and watch some (dark) Solarized glory!
+*Note*: depending on your installation and deployment methods, the CSS files might reside in another directory. Change `dist/css/` into the path where the CSS files got installed or copied to. For example, NPM installs the theme into `node_modules/bootstrap4-solarized-theme/dist` as a default.
+
+1. Refresh that page and watch some (dark) Solarized glory!
 
 ## Support and Contributions
 
@@ -90,4 +94,5 @@ $font-family-sans-serif:  'Menlo', Arial, sans-serif !default;
 The Bootstrap Solarized theme is based on the [Solarized](http://ethanschoonover.com/solarized) project. All credits for picking the basic colors in this theme should go to Ethan Schoonover. Solarized provides a carefully designed sixteen color palette that offers great readability, nice contrasts, and a variety of basic colors that can be used to signify various application states (e.g., warning or error states, etc). Solarized can be used in many other ways, like in your favorite [IDE](http://ethanschoonover.com/solarized#editors-ides) or [Terminal client](http://ethanschoonover.com/solarized#terminal-emulators), give it a try!
 
 ## License
+
 [MIT License](LICENSE)
