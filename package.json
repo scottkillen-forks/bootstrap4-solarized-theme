@@ -15,6 +15,7 @@
     }
   ],
   "dependencies": {
+    "bootstrap-sass": "^3.4.1",
     "bootstrap-scss": "^4.3.1"
   },
   "devDependencies": {
@@ -24,8 +25,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-header": "^2.0.9",
-    "gulp-scss": "^1.4.0",
-    "gulp-scss-lint": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
     "gulp-util": "^3.0.8"
   },
   "engines": {
