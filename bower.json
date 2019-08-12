@@ -1,8 +1,9 @@
 {
-  "name": "bootstrap-solarized-theme",
+  "name": "bootstrap4-solarized-theme",
   "description": "Bootstrap theme using the Solarized color palette",
   "main": "./dist/css/solarized-dark-theme.css",
   "authors": [
+    "Shigeru Hagiwara <hgwrsgr@gmail.com>",
     "Thijs Kok"
   ],
   "license": "MIT",
@@ -12,7 +13,7 @@
     "solarized"
   ],
   "moduleType": [],
-  "homepage": "https://github.com/thijskok/bootstrap-solarized-theme",
+  "homepage": "https://github.com/hgwr/bootstrap4-solarized-theme",
   "ignore": [
     "**/.*",
     "node_modules",

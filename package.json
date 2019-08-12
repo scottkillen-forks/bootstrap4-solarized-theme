@@ -15,18 +15,18 @@
     }
   ],
   "dependencies": {
-    "bootstrap-scss": "4.3.1"
+    "bootstrap-scss": "^4.3.1"
   },
   "devDependencies": {
-    "bootstrap-scss": "4.3.1",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-concat": "*",
-    "gulp-cssmin": "*",
-    "gulp-header": "*",
-    "gulp-sass": "*",
-    "gulp-sass-lint": "^1.2.0",
-    "gulp-util": "*"
+    "bootstrap-scss": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-header": "^2.0.9",
+    "gulp-scss": "^1.4.0",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-util": "^3.0.8"
   },
   "engines": {
     "node": "*"

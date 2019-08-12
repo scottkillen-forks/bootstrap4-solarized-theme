@@ -819,9 +819,10 @@ $carousel-caption-color:                      $content-4 !default;
 //
 //##
 
+$close-text-shadow-background: #fff;
 $close-font-weight:           bold !default;
 $close-color:                 darken($content-1, 60%) !default;
-$close-text-shadow:           0 1px 0 #fff !default;
+$close-text-shadow:           0 1px 0 $close-text-shadow-background !default;
 
 
 //== Code

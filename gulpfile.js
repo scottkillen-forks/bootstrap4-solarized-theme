@@ -1,7 +1,7 @@
 // Assigning modules to local variables
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    sasslint = require('gulp-sass-lint'),
+    scss = require('gulp-scss'),
+    scsslint = require('gulp-scss-lint'),
     cssmin = require('gulp-cssmin'),
     autoprefixer = require('gulp-autoprefixer'),
     header = require('gulp-header'),
@@ -17,39 +17,37 @@ var banner = ['/*!\n',
     ''
 ].join('');
 
-// Sass task to compile the sass files and add the banner
-gulp.task('sass', function() {
+// scss task to compile the scss files and add the banner
+gulp.task('scss', function() {
     return gulp
-      .src('./sass/*.scss')
-      .pipe(sass().on('error', sass.logError))
+      .src('./scss/*.scss')
+      .pipe(scss().on('error', scss.logError))
       .pipe(header(banner, { pkg: pkg }))
       .pipe(gulp.dest('dist/css'));
 });
 
 // Minify CSS
-gulp.task('minify', ['sass'], function() {
+gulp.task('minify', gulp.series(gulp.parallel('scss')), function() {
     return gulp
       .src(['./dist/css/*.css','!./dist/css/*.min.css'])
       .pipe(rename({ suffix: '.min' }))
       .pipe(autoprefixer())
       .pipe(cssmin())
-      .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.dest('dist/css'));
 });
 
-// Lint SASS
+// Lint scss
 gulp.task('lint', function () {
     return gulp
-      .src('sass/**/*.s+(a|c)ss')
-      .pipe(sasslint())
-      .pipe(sasslint.format())
-      .pipe(sasslint.failOnError())
+      .src('scss/**/*.s+(a|c)ss')
+      .pipe(scsslint());
 });
 
-// Watch task monitors SASS files
+// Watch task monitors scss files
 gulp.task('watch', function() {
-    gulp.watch('sass/*.scss', ['sass']);
+    gulp.watch('scss/*.scss', ['scss']);
     gulp.watch('dist/css/*.css', ['minify']);
 });
 
 // Default task
-gulp.task('default', ['sass', 'minify']);
+gulp.task('default', gulp.series(gulp.parallel('scss', 'minify')));
