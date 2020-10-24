@@ -403,9 +403,9 @@ bootstrap-sass@^3.4.1:
   integrity sha512-p5rxsK/IyEDQm2CwiHxxUi0MZZtvVFbhWmyMOt4lLkA4bujDA1TGoKT0i1FKIWiugAdP+kK8T5KMDFIKQCLYIA==
 
 bootstrap-scss@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/bootstrap-scss/-/bootstrap-scss-4.3.1.tgz#d0c5ae69957dcf677092d3d9dacfab2d15504e9c"
-  integrity sha512-9S2yVFoiCALs8nIBR9Tljdh9zDaBODZwVWajTgGuzONUxotDj44/SgW8s5Z3siJSyT4mye9PDbs0OPMmOfwoyg==
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/bootstrap-scss/-/bootstrap-scss-4.5.3.tgz#5a46cd7d3b3efff7ca9d541e70e766d2d1a5b29e"
+  integrity sha512-sWnHNg9oFHGWPOIm5j8WkuSLZVWFbfL4OssNe1rsTADzRhKTNCM8mmeRMhhezz8bu+WjJ9xCuEeTZ2lkxolq6A==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
